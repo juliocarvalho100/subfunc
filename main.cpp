@@ -1,21 +1,11 @@
 #include <QtGui/QApplication>
 #include "mainwindow.h"
-
-
-// http://doc.qt.nokia.com/4.7-snapshot/thread-basics.html#example-3-clock
-// hellothread/hellothread.h
- class HelloThread : public QThread
- {
-     Q_OBJECT
- private:
-     void run(){
-        qDebug() << "hello from worker thread " << thread()->currentThreadId();
-     }
- };
+#include "thread.h"
+#include <QDebug>
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
+    QApplication app(argc, argv);
     MainWindow w;
     w.show();
 
@@ -27,5 +17,5 @@ int main(int argc, char *argv[])
     qDebug() << "hello from GUI thread " << app.thread()->currentThreadId();
     thread.wait();  // do not exit before the thread is completed!
     
-    return a.exec();
+    return app.exec();
 }

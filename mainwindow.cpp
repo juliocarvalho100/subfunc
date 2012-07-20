@@ -11,8 +11,6 @@ MainWindow::MainWindow(QWidget *parent) :
     DigitalClockWidget *myClockWidget = new DigitalClockWidget();
     ui->verticalLayout->addWidget(myClockWidget);
     myClockWidget->show();
-
-
 }
 
 MainWindow::~MainWindow()

@@ -13,10 +13,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     digitalclock.cpp \
-    clocklabel.cpp
+    clocklabel.cpp \
+    thread.cpp
 
 HEADERS  += mainwindow.h \
     digitalclock.h \
-    clocklabel.h
+    clocklabel.h \
+    thread.h
 
 FORMS    += mainwindow.ui

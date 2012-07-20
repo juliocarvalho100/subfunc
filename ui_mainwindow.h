@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Thu Jul 19 16:40:25 2012
+** Created: Fri Jul 20 13:33:45 2012
 **      by: Qt User Interface Compiler version 4.8.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -22,6 +22,7 @@
 #include <QtGui/QMdiArea>
 #include <QtGui/QMenu>
 #include <QtGui/QMenuBar>
+#include <QtGui/QProgressBar>
 #include <QtGui/QStatusBar>
 #include <QtGui/QTabWidget>
 #include <QtGui/QTimeEdit>
@@ -47,6 +48,7 @@ public:
     QTabWidget *tabWidget_2;
     QWidget *tab_3;
     DigitalClock *widget;
+    QProgressBar *progressBar;
     QWidget *tab_4;
     QWidget *tab_2;
     QMenuBar *menuBar;
@@ -120,6 +122,10 @@ public:
 "	color: black;\n"
 "	background-color: white;\n"
 "}"));
+        progressBar = new QProgressBar(tab_3);
+        progressBar->setObjectName(QString::fromUtf8("progressBar"));
+        progressBar->setGeometry(QRect(20, 190, 118, 23));
+        progressBar->setValue(24);
         tabWidget_2->addTab(tab_3, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName(QString::fromUtf8("tab_4"));

@@ -48,5 +48,6 @@ ClockLabel::ClockLabel( QWidget *parent ) : QLabel( parent )
 void ClockLabel::updateTime()
 {
   setText( QTime::currentTime().toString( "hh:mm:ss" ) );
-  qDebug() << "Calculate!";
+  //qDebug() << "Calculate!";
+
 }
